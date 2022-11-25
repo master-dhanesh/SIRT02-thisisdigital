@@ -54,3 +54,42 @@ body {
     font-size: 50px;
     font-weight: 500;
 }
+
+.page1 {
+    width: 100%;
+    height: 90%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.p1head {
+    font-weight: 900;
+    font-size: 60px;
+    margin-bottom: 4%;
+    position: relative;
+}
+.p1head::after {
+    content: "";
+    background-image: url(assets/underline-green.svg);
+    width: 50%;
+    bottom: -1%;
+    right: 24%;
+    height: 8%;
+    position: absolute;
+}
+.p1para {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.p1para > i {
+    padding: 10px 30px;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-left: 20px;
+}
