@@ -92,4 +92,9 @@ body {
     border: 1px solid black;
     border-radius: 20px;
     margin-left: 20px;
+    transition: 0.25s;
+}
+
+.p1para:hover i {
+    background-color: #01ea8f;
 }
