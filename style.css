@@ -66,7 +66,8 @@ body {
     text-align: center;
 }
 
-.p1head {
+.p1head,
+.p3head {
     z-index: 2;
     pointer-events: none;
     font-weight: 200;
@@ -191,8 +192,10 @@ body {
 }
 
 .p3right {
+    padding-top: 15%;
+    padding-left: 5%;
+    padding-right: 5%;
     width: 50%;
-    background-color: green;
 }
 .p3img1 {
     position: absolute;
@@ -214,4 +217,53 @@ body {
     position: absolute;
     width: 20%;
     top: 68%;
+}
+.p3content {
+    font-size: 20px;
+    margin-top: 40px;
+}
+.p3head {
+    position: relative;
+    font-size: 65px;
+}
+.p3head::after {
+    content: "";
+    background-image: url(assets/underline-green.svg);
+    width: 36%;
+    top: 45%;
+    right: 38%;
+    height: 8%;
+    position: absolute;
+}
+.p3div {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    font-size: 22px;
+}
+.p3circle {
+    background-image: url(./assets/page2-image5.png);
+    margin-right: 20px;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb(193, 240, 248);
+    width: 60px;
+    height: 60px;
+}
+.p3div span {
+    padding: 20px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+.p3div span:hover {
+    background-color: #01ea8f;
+}
+.p3div span i {
+    margin-left: 20px;
 }
